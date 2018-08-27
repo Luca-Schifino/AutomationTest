@@ -1,0 +1,15 @@
+
+/* Class = "UIButton"; normalTitle = "OK"; ObjectID = "9Oa-JN-mb9"; */
+"9Oa-JN-mb9.normalTitle" = "OK";
+
+/* Class = "UILabel"; text = "Your name is Luca and you are 21 years old!"; ObjectID = "F4U-KT-JjZ"; */
+"F4U-KT-JjZ.text" = "Seu nome é Luca e você tem 21 anos!";
+
+/* Class = "UILabel"; text = "Age:"; ObjectID = "GTG-eT-LgJ"; */
+"GTG-eT-LgJ.text" = "Idade:";
+
+/* Class = "UIButton"; normalTitle = "CLEAN FIELDS"; ObjectID = "TZk-yk-EZ3"; */
+"TZk-yk-EZ3.normalTitle" = "LIMPAR CAMPOS";
+
+/* Class = "UILabel"; text = "Name:"; ObjectID = "dRj-zG-hMn"; */
+"dRj-zG-hMn.text" = "Nome:";

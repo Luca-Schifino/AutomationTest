@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  TestProject
+
+  Created by Luca Schifino on 26/08/18.
+  Copyright © 2018 Luca Schifino. All rights reserved.
+*/
+
+"NameInfo" = "Your name is ";
+"AgeInfo" = " and you are ";
+"YearsOld" = " years old!";
+"GenericErrorMessage" = "An error has occurred, please try again later";
+"EmptyFieldMessage" = "Please fill all the requested fields";
+"Ok" = "Ok";

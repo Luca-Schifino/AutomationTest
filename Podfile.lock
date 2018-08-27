@@ -1,0 +1,24 @@
+PODS:
+  - lottie-ios (2.5.0)
+  - R.swift (4.0.0):
+    - R.swift.Library (~> 4.0.0)
+  - R.swift.Library (4.0.0)
+
+DEPENDENCIES:
+  - lottie-ios
+  - R.swift
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - lottie-ios
+    - R.swift
+    - R.swift.Library
+
+SPEC CHECKSUMS:
+  lottie-ios: d699fdee68d7b63e721d949388b015fef1aaa4ac
+  R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
+  R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
+
+PODFILE CHECKSUM: 7d93ac7f7b122e247033cc4b92b5cc3759423c21
+
+COCOAPODS: 1.5.3

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xOO-Y9-mIZ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="ZYB-YZ-uti">
+            <objects>
+                <navigationController id="xOO-Y9-mIZ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xEv-iW-w4b">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Pkh-jc-fYH" kind="relationship" relationship="rootViewController" id="FeJ-zE-5dl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Fi-GW-BsH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-970" y="154"/>
+        </scene>
+        <!--Form View Controller-->
+        <scene sceneID="gwA-vQ-iWp">
+            <objects>
+                <viewController storyboardIdentifier="FormViewController" id="Pkh-jc-fYH" customClass="FormViewController" customModule="AutomationTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8My-ec-oht">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dRj-zG-hMn">
+                                <rect key="frame" x="50" y="173" width="50" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="name_label"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S1W-Vw-Wcv">
+                                <rect key="frame" x="110" y="169" width="215" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="name_text_field"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GTG-eT-LgJ">
+                                <rect key="frame" x="50" y="294" width="35" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="age_label"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kJZ-AM-HGw">
+                                <rect key="frame" x="95" y="290" width="230" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="age_text_field"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="31U-VJ-Zdx">
+                                <rect key="frame" x="50" y="420" width="275" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Oa-JN-mb9">
+                                        <rect key="frame" x="0.0" y="0.0" width="110" height="30"/>
+                                        <state key="normal" title="OK"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="ok_button"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="showModalViewController:" destination="Pkh-jc-fYH" eventType="touchUpInside" id="BWt-4l-HQ3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZk-yk-EZ3">
+                                        <rect key="frame" x="137.5" y="0.0" width="137.5" height="30"/>
+                                        <state key="normal" title="CLEAN FIELDS"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="clean_button"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="cleanTextFields:" destination="Pkh-jc-fYH" eventType="touchUpInside" id="MTH-VL-p4w"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="TZk-yk-EZ3" secondAttribute="bottom" id="FJB-ac-Mh4"/>
+                                    <constraint firstAttribute="height" constant="30" id="H6d-Kt-05d"/>
+                                    <constraint firstItem="TZk-yk-EZ3" firstAttribute="top" secondItem="31U-VJ-Zdx" secondAttribute="top" id="Ogz-rH-bHE"/>
+                                    <constraint firstItem="9Oa-JN-mb9" firstAttribute="top" secondItem="31U-VJ-Zdx" secondAttribute="top" id="SxK-W6-rHm"/>
+                                    <constraint firstItem="9Oa-JN-mb9" firstAttribute="leading" secondItem="31U-VJ-Zdx" secondAttribute="leading" id="Yco-JW-TIp"/>
+                                    <constraint firstItem="9Oa-JN-mb9" firstAttribute="width" secondItem="31U-VJ-Zdx" secondAttribute="width" multiplier="0.4" id="g59-Jn-QWr"/>
+                                    <constraint firstAttribute="trailing" secondItem="TZk-yk-EZ3" secondAttribute="trailing" id="nAT-f6-l8T"/>
+                                    <constraint firstItem="TZk-yk-EZ3" firstAttribute="width" secondItem="31U-VJ-Zdx" secondAttribute="width" multiplier="0.5" id="pif-iC-mOj"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="S1W-Vw-Wcv" firstAttribute="centerY" secondItem="dRj-zG-hMn" secondAttribute="centerY" id="1AM-v0-fdr"/>
+                            <constraint firstItem="dRj-zG-hMn" firstAttribute="leading" secondItem="QJb-6j-Ha8" secondAttribute="leading" constant="50" id="1e1-fr-Hwe"/>
+                            <constraint firstItem="kJZ-AM-HGw" firstAttribute="leading" secondItem="GTG-eT-LgJ" secondAttribute="trailing" constant="10" id="32Y-A5-HTs"/>
+                            <constraint firstItem="dRj-zG-hMn" firstAttribute="centerY" secondItem="8My-ec-oht" secondAttribute="centerY" constant="-150" id="4St-cH-Eqx"/>
+                            <constraint firstItem="QJb-6j-Ha8" firstAttribute="trailing" secondItem="kJZ-AM-HGw" secondAttribute="trailing" constant="50" id="Aq8-A1-hJb"/>
+                            <constraint firstItem="kJZ-AM-HGw" firstAttribute="centerY" secondItem="GTG-eT-LgJ" secondAttribute="centerY" id="E2t-hB-w1V"/>
+                            <constraint firstItem="QJb-6j-Ha8" firstAttribute="trailing" secondItem="S1W-Vw-Wcv" secondAttribute="trailing" constant="50" id="Eqq-ka-9Jm"/>
+                            <constraint firstItem="31U-VJ-Zdx" firstAttribute="top" secondItem="kJZ-AM-HGw" secondAttribute="bottom" constant="100" id="EzX-Iw-2xY"/>
+                            <constraint firstItem="GTG-eT-LgJ" firstAttribute="top" secondItem="dRj-zG-hMn" secondAttribute="bottom" constant="100" id="JS3-q7-0PN"/>
+                            <constraint firstItem="GTG-eT-LgJ" firstAttribute="leading" secondItem="dRj-zG-hMn" secondAttribute="leading" id="OJj-l7-GBi"/>
+                            <constraint firstItem="S1W-Vw-Wcv" firstAttribute="leading" secondItem="dRj-zG-hMn" secondAttribute="trailing" constant="10" id="Q3M-8g-UVw"/>
+                            <constraint firstItem="31U-VJ-Zdx" firstAttribute="leading" secondItem="QJb-6j-Ha8" secondAttribute="leading" constant="50" id="g3z-2Y-lN7"/>
+                            <constraint firstItem="QJb-6j-Ha8" firstAttribute="trailing" secondItem="31U-VJ-Zdx" secondAttribute="trailing" constant="50" id="rJa-jH-BMI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QJb-6j-Ha8"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4NA-H8-JBc"/>
+                    <connections>
+                        <outlet property="ageLabel" destination="GTG-eT-LgJ" id="yhR-Oj-a0I"/>
+                        <outlet property="ageTextField" destination="kJZ-AM-HGw" id="iWO-Gt-sE5"/>
+                        <outlet property="cleanFieldsButton" destination="TZk-yk-EZ3" id="2Ta-xK-sY0"/>
+                        <outlet property="nameLabel" destination="dRj-zG-hMn" id="ZIF-wr-YUB"/>
+                        <outlet property="nameTextField" destination="S1W-Vw-Wcv" id="A4N-yD-xfP"/>
+                        <outlet property="okButton" destination="9Oa-JN-mb9" id="lbt-1X-kel"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Et-WC-19d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="37.600000000000001" y="155.17241379310346"/>
+        </scene>
+        <!--User Info View Controller-->
+        <scene sceneID="lfp-m6-SdD">
+            <objects>
+                <viewController storyboardIdentifier="UserInfoViewController" id="bfa-Z3-oJh" customClass="UserInfoViewController" customModule="AutomationTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="B1q-Jc-0ck">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your name is Luca and you are 21 years old!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4U-KT-JjZ">
+                                <rect key="frame" x="20" y="191.5" width="335.5" height="84"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="user_info_label"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Qv-kH-Ze1">
+                                <rect key="frame" x="137" y="375.5" width="100" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="lmO-3N-ml5"/>
+                                    <constraint firstAttribute="height" constant="100" id="y81-Eb-dLw"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="animation_view"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7Qv-kH-Ze1" firstAttribute="centerX" secondItem="B1q-Jc-0ck" secondAttribute="centerX" id="4ME-pD-Koy"/>
+                            <constraint firstItem="F4U-KT-JjZ" firstAttribute="centerY" secondItem="B1q-Jc-0ck" secondAttribute="centerY" constant="-100" id="8Jr-Wd-B6u"/>
+                            <constraint firstItem="uf6-rh-a4U" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="F4U-KT-JjZ" secondAttribute="trailing" constant="20" id="Tkn-c3-v3O"/>
+                            <constraint firstItem="7Qv-kH-Ze1" firstAttribute="top" secondItem="F4U-KT-JjZ" secondAttribute="bottom" constant="100" id="WML-KM-wqj"/>
+                            <constraint firstItem="F4U-KT-JjZ" firstAttribute="centerX" secondItem="B1q-Jc-0ck" secondAttribute="centerX" id="epz-xQ-Zuv"/>
+                            <constraint firstItem="F4U-KT-JjZ" firstAttribute="leading" relation="lessThanOrEqual" secondItem="B1q-Jc-0ck" secondAttribute="leading" constant="20" id="jlE-aa-CbZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uf6-rh-a4U"/>
+                    </view>
+                    <connections>
+                        <outlet property="auxiliarView" destination="7Qv-kH-Ze1" id="esM-Wc-GDW"/>
+                        <outlet property="infoLabel" destination="F4U-KT-JjZ" id="etb-nf-Ymu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xhD-C5-04B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1202" y="155"/>
+        </scene>
+    </scenes>
+</document>
